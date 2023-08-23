@@ -7,9 +7,27 @@ Ce projet consiste en une application serveur développée en Node.js pour la ge
 - Node.js
 - MySQL
 
+## Clonage du Projet
+
+Pour obtenir une copie de ce projet sur votre machine locale, suivez ces étapes :
+
+1. Ouvrez votre terminal.
+
+2. Naviguez jusqu'au répertoire où vous souhaitez cloner le projet.
+
+3. Exécutez la commande suivante pour cloner le projet depuis GitHub :
+
+   ```bash
+   git clone https://github.com/RichestHumanAlive/rfidReader.git
+   ```
+
 ## Installation
 
-1. Clonez ce dépôt sur votre machine locale.
+1. Naviguez dans le répertoire du projet :
+
+   ```bash
+   cd rfidReader
+   ```
 
 2. Installez les dépendances en utilisant la commande suivante :
 
