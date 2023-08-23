@@ -95,10 +95,17 @@ sudo apt install mysql-server
    ```bash
     npm start
    ```
+   Si vous avez configuré un script `start`
+
+   ou
+
+   ```bash
+    node app.js
+   ```
 
    L'application sera disponible à l'adresse http://localhost:3000.
 
-3. Pour traiter les lectures de tags, envoyez des requêtes POST à l'URL http://localhost:3000/tags/process-tags en utilisant des données JSON au format suivant :
+4. Pour traiter les lectures de tags, envoyez des requêtes POST à l'URL http://localhost:3000/tags/process-tags en utilisant des données JSON au format suivant :
 
    ```json
    {
