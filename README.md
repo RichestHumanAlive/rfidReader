@@ -117,7 +117,7 @@ sudo apt install mysql-server
 
 Toute contribution au projet est la bienvenue. Si vous trouvez des bogues, souhaitez ajouter des fonctionnalités ou améliorer la documentation, n'hésitez pas à ouvrir une issue ou à soumettre une pull request.
 
-Licence
+## Licence
 Ce projet n'es soumis à aucune licence.
 
 Pour toute question ou commentaire, n'hésitez pas à me contacter à l'adresse walter.soft.pro@email.com.
