@@ -1,20 +1,24 @@
 /**
- * Validation de l'EPC (Electronic Product Code).
+ * Validation de l'epc (Electronic Product Code).
  *
- * @param {string} EPC - Le champ EPC reçu de l'API.
- * @returns {boolean} Renvoie true si l'EPC est valide, sinon false.
+ * @param {string} epc - Le champ epc reçu de l'API.
+ * @returns {boolean} Renvoie true si l'epc est valide, sinon false.
  */
-function isValidEPC(EPC) {
+function isValidepc(epc) {
   // Suppression des tirets s'ils sont présents
-  const cleanedEPC = EPC.replace(/-/g, '');
+  const cleanedepc = epc.replace(/-/g, '');
+
+  // Regex d'exactement 24 caractères respectant les conditions : 
+  // Commencer par 'E98A25', se terminer par 8 chiffres et avoir 24 caractères hexadécimaux au total
+  const regex = /^E98A25[0-9A-Fa-f]{10}[0-9]{8}$/;
 
   // Vérification de la longueur et du format
-  if (cleanedEPC.length !== 24 || !/^E98A25\d{8}$/.test(cleanedEPC)) {
-    console.error('EPC invalide.');
+  if (!regex.test(cleanedepc)) {
+    console.error('epc invalide.');
     return false;
   }
 
   return true;
 }
 
-module.exports = isValidEPC;
+module.exports = isValidepc;
